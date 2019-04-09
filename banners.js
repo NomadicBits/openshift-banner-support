@@ -13,7 +13,7 @@ var topPop = new Popper(window, bannertop,{
 			enabled :'false'
 		}
 	}
-}
+})
 
 var bannerbot = document.body.appendChild('<div class="footer">bottom</div>')
 //create a 'fake' box on the bottom of the view to contain banner
@@ -58,4 +58,4 @@ var botPop = new Popper(Box, bannerbot,{
 			enabled :'false'
 		}
 	}
-}
+})
