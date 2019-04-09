@@ -1,22 +1,21 @@
-//untested
-
-var bannertop = document.body.appendChild('<banner style='wide100%'>here</banner>')
+var bannertop = document.body.appendChild('<div class="header">here</div>')
 var topPop = new Popper(window, bannertop,{
-	placement: top-start,
+	placement: 'top-start',
 	positionFixed: true,
 	modifiers: {
 		inner: {
-			enabled: true;
+			enabled: 'true'
 		},
 		preventOverflow: {
-			boundariesElement: window;
-			padding: 0;
+			padding: 0
+		},
+		filp: {
+			enabled :'false'
 		}
-			
 	}
 }
 
-var bannerbot = document.body.appendChild('<bannerbot style='wide100%'>bottom</bannerbot>')
+var bannerbot = document.body.appendChild('<div class="footer">bottom</div>')
 //create a 'fake' box on the bottom of the view to contain banner
 Class botBox {
 	constructor () {
@@ -50,12 +49,13 @@ var botPop = new Popper(Box, bannerbot,{
 	positionFixed: true,
 	modifiers: {
 		inner: {
-			enabled: true;
+			enabled: 'true'
 		},
 		preventOverflow: {
-			boundariesElement: window;
-			padding: 0;
+			padding: 0
+		},
+		filp: {
+			enabled :'false'
 		}
-			
 	}
 }
