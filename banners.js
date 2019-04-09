@@ -54,7 +54,7 @@ class botBox {
 
 var Box = new botBox();
 var botPop = new Popper(Box, bannerbot,{
-	placement: bottom-start,
+	placement: 'bottom-start',
 	positionFixed: true,
 	modifiers: {
 		inner: {
