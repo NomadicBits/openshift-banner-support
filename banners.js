@@ -1,4 +1,9 @@
-var bannertop = document.body.appendChild('<div class="header">here</div>')
+
+var topele = document.createElement('div')
+var t = document.createTextNode("Red Hat!")
+topele.appendChild(t)
+topele.classList.add('header');
+var bannertop = document.body.appendChild(topele)
 var topPop = new Popper(window, bannertop,{
 	placement: 'top-start',
 	positionFixed: true,
@@ -15,7 +20,11 @@ var topPop = new Popper(window, bannertop,{
 	}
 })
 
-var bannerbot = document.body.appendChild('<div class="footer">bottom</div>')
+var bottomele = document.createElement('div')
+var t = document.createTextNode("bottom")
+bottomele.appendChild(t)
+bottomele.classList.add('footer');
+var bannerbot = document.body.appendChild(bottomele)
 //create a 'fake' box on the bottom of the view to contain banner
 class botBox {
 	constructor() {
