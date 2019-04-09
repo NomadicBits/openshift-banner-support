@@ -1,4 +1,4 @@
-
+window.onload = function() {
 var topele = document.createElement('div')
 var t = document.createTextNode("Red Hat!")
 topele.appendChild(t)
@@ -68,3 +68,4 @@ var botPop = new Popper(Box, bannerbot,{
 		}
 	}
 })
+}
