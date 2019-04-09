@@ -30,7 +30,7 @@ class botBox {
 	constructor() {
 		//subtract banner hight from top,
 		this.rect = {
-        		top: window.innerHeight-10,
+        		top: window.innerHeight-20,
         		left: 0,
         		right: window.innerWidth,
         		bottom: window.innerHeight,
