@@ -17,8 +17,8 @@ var topPop = new Popper(window, bannertop,{
 
 var bannerbot = document.body.appendChild('<div class="footer">bottom</div>')
 //create a 'fake' box on the bottom of the view to contain banner
-Class botBox {
-	constructor () {
+class botBox {
+	constructor() {
 		//subtract banner hight from top,
 		this.rect = {
         		top: window.innerHeight-10,
