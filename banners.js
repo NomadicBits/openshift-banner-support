@@ -1,6 +1,6 @@
 window.onload = function() {
 var topele = document.createElement('div')
-var t = document.createTextNode("Red Hat!")
+var t = document.createTextNode("Banners placed by js with poppers")
 topele.appendChild(t)
 topele.classList.add('header');
 var bannertop = document.body.appendChild(topele)
@@ -21,7 +21,7 @@ var topPop = new Popper(window, bannertop,{
 })
 
 var bottomele = document.createElement('div')
-var t = document.createTextNode("bottom")
+var t = document.createTextNode("Js injected by nginx router")
 bottomele.appendChild(t)
 bottomele.classList.add('footer');
 var bannerbot = document.body.appendChild(bottomele)
